@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>Primjer 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+</head>
+<body>
+    Nickname: <input type="text" list="datalist_imena" id="txt_ime"/>
+    <datalist id="datalist_imena"></datalist>
+    <input type="submit" id="btn" value = "Give me my pair" />
+    <div id = "myPair"></div>
+    <script>
+
+function onBtnClick(unos,newUser){
+  
+  if(unos === ""){
+    return;
+  }
+  $.ajax(
+  {
+      url: "connect.php",
+      dataType:'jsonp', //json
+      data:
+      {
+          nickname: unos,
+          newUser: newUser
+      },
+      success: function( data )
+      {
+          // Jednostavno sve što dobiješ od servera stavi u dataset.
+          $( "#myPair" ).html( data.opponent);
+
+          localStorage['user'] = data.nickname;
+          localStorage['opponent'] = data.opponent;
+          localStorage['shuffeledCards']= data.shuffeledCards;
+          localStorage['first'] = data.first;
+          localStorage['start'] = true;
+          if(localStorage['opponent'] != 'undefined'){
+
+            window.location.href = 'playPageMultiplayer.html';
+            //console.log(localStorage['opponent']);
+          }else{
+            //console.log(newUser);
+            setTimeout(onBtnClick(data.nickname,false),2000);//search if is connected
+            console.log(data);
+          }
+      },
+      error: function( xhr, status )
+      {
+          if( status !== null )
+              console.log( "Greška prilikom Ajax poziva: " + status );
+      }
+  } );
+}
+
+$( document ).ready( function()
+{
+    var txt = $( "#txt_ime" );
+    var btn = $("#btn");
+
+    // Kad netko nešto tipka u text-box:
+    btn.on( "click", function(e)
+    {
+        var unos = txt.val(); // this = HTML element input, $(this) = jQuery objekt
+        onBtnClick(unos,true);
+
+    } );
+} );
+
+    </script>
+</body>
+</html>

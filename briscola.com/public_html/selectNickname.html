@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <meta charset="utf-8">
+    <title>Select nickname</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' wss://echo.websocket.org/ https:">
+    <meta name="author" content="Mia Filić">
+
+    <link rel="stylesheet" href="css/stylesPlay.css?v=1.0">
+    <link rel="stylesheet" href="css/popupStyle.css?v=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type = "text/javaScript" src = "javaScript/selectNickname.js">
+    </script>
+  </head>
+  <body>
+    <h1>Select nickname and mode.</h1>
+    <label><b>Nickname</b></label>
+    <input id = "nickname" type="text" pattern="[A-Za-z_0-9]{3,10}" placeholder="Enter Username [A-Za-z_0-9]{3,10}" name="nickname" required>
+    <br/>
+    <input type="radio" name="mode" value="1" checked> Easy<br/>
+    <input type="radio" name="mode" value="2"> Medium<br/>
+    <input type="radio" name="mode" value="3"> Hard<br/>
+    <button type="submit" id="nicknameBtn">Play</button>
+  </body>
+</html>

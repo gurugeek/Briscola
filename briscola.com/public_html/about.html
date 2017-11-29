@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!-- Website of Briscola Cardgame-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Briscola Online</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/w3.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="header">
+			<div>
+				<div>
+					<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+					<ul>
+						<li>
+							<a href="index.html" id="menu1"><b style="opacity:0;">d d a </b>home</a>
+						</li>
+						<li>
+							<a href="media.html" id="menu2">Play vs AI</a>
+						</li>
+						<li>
+							<a href="games.html" id="menu3">Play vs Player</a>
+						</li>
+						<li class="selected">
+							<a href="about.html" id="menu4">How to play</a>
+						</li>
+						<li>
+							<a href="blog.html" id="menu5">About us <b style="opacity:0;">d d a </b> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+		<div>
+				<div>
+					<div class="section">
+						<div>
+							<h3>Briscola Rules</h3>
+							<div style="line-height: 24px;">
+							<p>
+After the deck is shuffled, each player is dealt three cards. The next card is placed face up on the playing surface, and the remaining deck is placed face down covering half of the up-turned card. This card is the Briscola, and represents the trump suit for the game. Before the first hand is played (in four player game), team players may show each other their cards. The deal, and game play itself,  proceeds counter-clockwise.
+</p>
+The player to the right of the dealer leads the first hand (or trick) by playing one card face up on the playing surface. Each player subsequently plays a card in turn, until all players have played one card. 
+<p>
+The winner of that hand is determined as follows:
+
+<ul>
+  <li>if any briscola (trump) has been played, the player who played the highest valued trump wins</li>
+  <li>if no briscole (trumps) have been played, the player who played the highest card of the lead suit wins </li>
+</ul>
+Unlike other trump card games, players are not required to follow suit, that is, to play the same suit as the lead player.
+</p>
+<p>
+Once the winner of a trick is determined, that player collects the played cards, and places them face down in a pile. Each player maintains his/her own pile, though the four- and six-player versions may have one player collecting all tricks won by his partners. Then, each player draws a card from the remaining deck, starting with the player who won the trick, proceeding counter-clockwise. Note that the last card collected in the game should be the up-turned Briscola. The player who won the trick leads the next hand. During game play and only before the next to the last hand is played, a player who draws the card with the seven (7) of trump can take the "briscola".
+This may be done only if the player has won a hand.
+
+After all cards have been played, players calculate the total point value of cards in their own piles. For multi-player games, partners combine their points.
+</p>
+
+
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		
+		
+			<div>
+				<div>
+					<div class="about">
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="steps/prva_prva.jpg" style="width:100%">
+  <img class="mySlides" src="steps/prva_brijem.jpg" style="width:100%">
+  <img class="mySlides" src="steps/trazena.jpg" style="width:100%">
+  <img class="mySlides" src="steps/points.jpg" style="width:100%">
+  <img class="mySlides" src="steps/second_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/third_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/fourth_b_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/fourth_a_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/fifth_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/sixth_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/seventh_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/eight_step.jpg" style="width:100%">  
+  <img class="mySlides" src="steps/nineth_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/tenth_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/eleventh_step.jpg" style="width:100%">
+  <img class="mySlides" src="steps/twelwth_step.jpg" style="width:100%">
+  <a href="https://youtu.be/xouJ0syFJNs"><img class="mySlides" src="steps/final.jpg" style="width:100%"></a>
+
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+						</div>
+						
+				</div>
+			</div>			
+		</div>
+
+		<div id="footer">
+			<div>
+				<ul>
+					<li id="facebook">
+						<a href="https://www.facebook.com/pages/Brisca/109631659062600?fref=ts&rf=112922642052282">facebook</a>
+					</li>
+					<li id="twitter">
+						<a href="https://twitter.com/">twitter</a>
+					</li>
+					<li id="googleplus">
+						<a href="https://plus.google.com/">googleplus</a>
+					</li>
+				</ul>
+				<p>
+					Software Engineering 2016
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

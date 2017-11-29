@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head >
+    <meta charset="utf-8">
+    <title>Card Game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' wss://echo.websocket.org/ https:">
+    <meta name="author" content="Mia Filić">
+
+    <link rel="stylesheet" href="css/stylesRoundOver.css?v=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <script type = "text/javaScript" src = "javaScript/roundOver.js">
+    </script>
+  </head>
+
+  <body>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Game over!</h2>
+            <a class="close" href="games.html">&times;</a>
+            <div class="content">
+              <p>Winner is <span id="winner"></span>.</p>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

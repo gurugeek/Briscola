@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!-- Website of Briscola Cardgame-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Briscola Online</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/stylesPlay.css?v=1.0">
+    <link rel="stylesheet" href="css/popupStyle.css?v=1.0">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type = "text/javaScript" src = "javaScript/selectNickname.js">
+	</script>
+</head>
+<body>
+	<div id="background">
+		<div id="header">
+			<div>
+				<div>
+					<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+					<ul>
+						<li>
+							<a href="index.html" id="menu1"><b style="opacity:0;">d d a </b>home</a>
+						</li>
+						<li class="selected">
+							<a href="media.html" id="menu2">Play vs AI</a>
+						</li>
+						<li>
+							<a href="games.html" id="menu3">Play vs Player</a>
+						</li>
+						<li>
+							<a href="about.html" id="menu4">How to play</a>
+						</li>
+						<li>
+							<a href="blog.html" id="menu5">About us <b style="opacity:0;">d d a </b> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div>
+				<div>
+					<div class="section">
+						<div>
+							<h3>Select nickname and mode</h3>
+							<div style="line-height: 24px;">
+							
+    <label><b>Nickname</b></label>
+    <input id = "nickname" type="text" pattern="[A-Za-z_0-9]{3,10}" placeholder="Enter Username [A-Za-z_0-9]{3,10}" name="nickname" required>
+    <br/>
+    <input type="radio" name="mode" value="1" checked> Easy<br/>
+    <input type="radio" name="mode" value="2"> Medium<br/>
+    <input type="radio" name="mode" value="3"> Hard<br/>
+    <button type="submit" id="nicknameBtn">Play</button>
+							
+
+
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul>
+					<li id="facebook">
+						<a href="https://www.facebook.com/pages/Brisca/109631659062600?fref=ts&rf=112922642052282">facebook</a>
+					</li>
+					<li id="twitter">
+						<a href="https://twitter.com/">twitter</a>
+					</li>
+					<li id="googleplus">
+						<a href="https://plus.google.com/">googleplus</a>
+					</li>
+				</ul>
+				<p>
+					Software Engineering 2016
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
